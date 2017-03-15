@@ -1,0 +1,36 @@
+body{
+	padding-top:20px;
+	font-family: "Ubuntu", Candara, Futura, sans-serif;
+}
+
+.logo{
+	width: 63px;
+	display: inline-block;
+    margin-bottom: 10px;
+}
+
+.header{
+	font-size:30px;
+	color:#ca1f26;
+	font-weight:700;
+	line-height:40px;
+	letter-spacing:0px;
+}
+
+.image { 
+   padding-top:50px;
+   position: relative; 
+   width: 100%; /* for IE 6 */
+   text-align:center;
+}
+
+.image h2 { 
+   position: absolute; 
+   top: 200px; 
+   left: 0; 
+   width: 100%; 
+   color: #4e4548;
+   font-size: 40px;
+   font-weight: 400;
+   line-height: 50px;
+}
