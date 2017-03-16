@@ -4,7 +4,7 @@ body{
 }
 
 .logo{
-	width: 40%;
+	width: 63px;
 	display: inline-block;
         margin-bottom: 10px;
 }
@@ -20,7 +20,7 @@ body{
 .image { 
    padding-top:50px;
    position: relative; 
-   width: 100%; /* for IE 6 */
+   width: 40%; /* for IE 6 */
    text-align:center;
 }
 
