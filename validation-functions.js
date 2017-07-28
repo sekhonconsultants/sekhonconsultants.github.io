@@ -8,7 +8,7 @@ $(document).ready(function() {
             validating: 'glyphicon glyphicon-refresh'
         },        
         fields: {
-            issueNumber: {
+            issuenumber: {
              message: 'Please enter the issue number',
                 validators: {
                     notEmpty: {
@@ -20,7 +20,7 @@ $(document).ready(function() {
                     },
                 }
             },
-            estimatedHours: {
+            estimatedhours: {
              message: 'Please enter estimated hours',
                 validators: {
                     notEmpty: {
