@@ -15,7 +15,7 @@ $(document).ready(function() {
                     },
                     regexp: {
                         regexp: /^[\d#]+$/,
-                        message: 'Issue number can only accept numbers and # symbol input'
+                        message: 'Issue number can only accept numbers and # symbol'
                     },
                 }
             },
