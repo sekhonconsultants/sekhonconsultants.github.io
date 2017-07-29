@@ -51,14 +51,16 @@ $(document).ready(function() {
         $('#btnPostForm').prepend($('<span></span>').addClass('glyphicon glyphicon-refresh glyphicon-refresh-animate'));
         var jqxhr = $.post(url, $form.serialize(), function(data) {
             console.log("Success! Data: " + data);
-            //$(location).attr('href',redirectUrl);
+            if(data.result == "success"){
+                $(location).attr('href',redirectUrl);
+            }
         })
             .fail(function(data) {
                 console.warn("Error! Data: " + data.statusText);
                 // HACK - check if browser is Safari - and redirect even if fail b/c we know the form submits.
                 if (navigator.userAgent.search("Safari") >= 0 && navigator.userAgent.search("Chrome") < 0) {
-                    //alert("Browser is Safari -- we get an error, but the form still submits -- continue.");
-                    //$(location).attr('href',redirectUrl);                
+                    alert("Browser is Safari -- we get an error, but the form still submits -- continue.");
+                    $(location).attr('href',redirectUrl);                
                 }
             });
     });
