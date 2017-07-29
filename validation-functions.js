@@ -50,7 +50,6 @@ $(document).ready(function() {
         // show the loading 
         $('#btnPostForm').prepend($('<span></span>').addClass('glyphicon glyphicon-refresh glyphicon-refresh-animate'));
         var jqxhr = $.post(url, $form.serialize(), function(data) {
-            console.log("Success! Data: " + data);
             if(data.result == "success"){
                 $(location).attr('href',redirectUrl);
             }
