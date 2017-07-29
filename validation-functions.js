@@ -44,7 +44,7 @@ $(document).ready(function() {
         var bv = $form.data('bootstrapValidator');
 
         // Use Ajax to submit form data
-        var url = 'https://script.google.com/macros/s/AKfycbxvTrdSqi5aMOSCBor_ZKnMvbrD-TXdCxLwdHuk0vOh9NgRhxkZ/exec';
+        var url = 'https://script.google.com/macros/s/AKfycbxjpvS9K1UPxhCgsCu4dvIxz5hAHiImtRwphm8QTP3Ao7AFub4a/exec';
         var redirectUrl = 'quote-success.html';
         
         // show the loading 
