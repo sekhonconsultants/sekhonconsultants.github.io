@@ -14,8 +14,8 @@ $(document).ready(function() {
                         message: 'Issue number is required and cannot be empty'
                     },
                     regexp: {
-                        regexp: /^\d+$/,
-                        message: 'Issue number can only accept number input'
+                        regexp: /^[\d#]+$/,
+                        message: 'Issue number can only accept numbers and # symbol input'
                     },
                 }
             },
@@ -27,7 +27,7 @@ $(document).ready(function() {
                     },
                     regexp: {
                         regexp: /^[\d-]+$/,
-                        message: 'Estimated hours can accept only numbers and dashes'
+                        message: 'Estimated hours can accept only numbers and dash symbol'
                     },
                 }
             }
