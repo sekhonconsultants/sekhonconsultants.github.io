@@ -1,6 +1,5 @@
 $(document).ready(function() {
-    $('#test-form').bootstrapValidator({
-        //submitButtons: '#postForm',
+    $('#quote-form').bootstrapValidator({
         // To use feedback icons, ensure that you use Bootstrap v3.1.0 or later
         feedbackIcons: {
             valid: 'glyphicon glyphicon-ok',
@@ -8,7 +7,7 @@ $(document).ready(function() {
             validating: 'glyphicon glyphicon-refresh'
         },        
         fields: {
-            issuenumber: {
+            issueNumber: {
              message: 'Please enter the issue number',
                 validators: {
                     notEmpty: {
@@ -20,7 +19,7 @@ $(document).ready(function() {
                     },
                 }
             },
-            estimatedhours: {
+            estimatedHours: {
              message: 'Please enter estimated hours',
                 validators: {
                     notEmpty: {
@@ -46,9 +45,10 @@ $(document).ready(function() {
 
         // Use Ajax to submit form data
         var url = 'https://script.google.com/macros/s/AKfycbxvTrdSqi5aMOSCBor_ZKnMvbrD-TXdCxLwdHuk0vOh9NgRhxkZ/exec';
-        //var redirectUrl = 'quote-success.html';
+        var redirectUrl = 'quote-success.html';
+        
         // show the loading 
-        $('#postForm').prepend($('<span></span>').addClass('glyphicon glyphicon-refresh glyphicon-refresh-animate'));
+        $('#btnPostForm').prepend($('<span></span>').addClass('glyphicon glyphicon-refresh glyphicon-refresh-animate'));
         var jqxhr = $.post(url, $form.serialize(), function(data) {
             console.log("Success! Data: " + data.statusText);
             //$(location).attr('href',redirectUrl);
