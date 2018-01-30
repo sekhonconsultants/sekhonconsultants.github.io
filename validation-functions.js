@@ -16,7 +16,7 @@ $(document).ready(function() {
                     regexp: {
                         regexp: /^[\d#]+$/,
                         message: 'Issue number can only accept numbers and # symbol'
-                    },
+                    }
                 }
             },
             estimatedHours: {
@@ -26,9 +26,21 @@ $(document).ready(function() {
                         message: 'Estimated hours are required and cannot be empty'
                     },
                     regexp: {
+                        /*
                         regexp: /^[\d-]+$/,
                         message: 'Estimated hours can accept only numbers and dash symbol'
-                    },
+                        */
+                        regexp: /^[1-9]\d*(\.\d+)?/,
+                        message: 'Hours spent can only accept numbers and decimals'
+                    }
+                }
+            },
+            notes: {
+             message: 'Please enter change logs',
+                validators: {
+                    notEmpty: {
+                        message: 'Change logs are required and cannot be empty'
+                    }
                 }
             }
         }
