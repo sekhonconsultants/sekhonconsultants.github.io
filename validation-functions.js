@@ -57,7 +57,7 @@ $(document).ready(function() {
 
         // Use Ajax to submit form data
         var url = 'https://script.google.com/macros/s/AKfycbxjpvS9K1UPxhCgsCu4dvIxz5hAHiImtRwphm8QTP3Ao7AFub4a/exec';
-        var redirectUrl = 'quote-success.html';
+        var redirectUrl = 'success.html';
         
         // show the loading 
         $('#btnPostForm').prepend($('<span></span>').addClass('glyphicon glyphicon-refresh glyphicon-refresh-animate'));
